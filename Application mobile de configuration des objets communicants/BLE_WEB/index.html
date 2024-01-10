@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration des objets communicants</title>
+    <script src="js/formulaire.js" defer></script>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+  </head>
+
+  <body id="body">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Emerson
+            </span>
+          </a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Connexion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="config">
+      <h1 id="titre">Configuration des objets communicants</h1>
+      <p id="text"></p>
+
+      <div class="formulaire">
+        <h2>Formulaire</h2>
+        <p id="Desc1">Voici le formulaire pour configurer les objets communicants (ESP32)</p>
+        <form id="form" name="formulaire" action="/page-traitement-donnees" method="post">
+          <div id="div1">
+            <p id="paraform1">Quel est le type de l'objet ?</p>
+            <select id="typeObjet" name="typeObjet" required>
+              <option id="opt1" value="" disabled selected hidden>Choisissez le type de l'objet</option>
+              <option id="opt2" value="vib">Vibration</option>
+              <option id="opt3" value="col">Colonne lumineuse</option>
+            </select>
+          </div>
+          <div id="div2">
+            <p id="paraform2" for="SSID">SSID du point d'accès WiFi</p>
+            <input type="SSID" id="input_SSID" name="SSID" placeholder="SSID du point d'accès" required>
+          </div>
+          <div id="div3">
+            <p id="paraform3" for="password">Mot de passe du point d'accès WiFi</p>
+            <input type="password" id="input_Password" name="password" placeholder="Password du point d'accès" required>
+          </div>
+          <div id="divBtn">
+            <button id="btnEnvoi" type="submit">Suite de la configuration de l'ESP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info-logo">
+              <img src="css/img/Logo2.PNG" class="PhotoLogo">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info-nav">
+              <h4>
+                Navigation
+              </h4>
+              <ul>
+                <li>
+                  <a href="index.html">
+                    Accueil
+                  </a>
+                </li>
+                <li>
+                  <a href="service.html">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Connexion
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info-contact">
+              <h4>
+                Contact Info
+              </h4>
+              <div class="location">
+                <h6>
+                  Adresse postale:
+                </h6>
+                <a href="">
+                  <span>
+                    Avenue Pierre Brossolette 159, 59428 Armentières
+                  </span>
+                </a>
+              </div>
+              <div class="call">
+                <h6>
+                  Téléphone:
+                </h6>
+                <a href="">
+                  <span>
+                    03 20 10 55 00
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="discover">
+              <h4>
+                Découvrir
+              </h4>
+              <ul>
+                <li>
+                  <a href="">
+                    Aide
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact.html">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="container-fluid footer_section">
+      <p>
+        Copyright &copy; 2023 All Rights Reserved By Emerson
+        <a href="https://html.design/"></a>
+      </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  </body>
+
+</html>

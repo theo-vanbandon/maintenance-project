@@ -1,0 +1,277 @@
+body {
+    font-family: Montserrat, "sans-serif";
+    color: #303030;
+  }
+
+  form {
+    background: #F0F8FF;
+    text-align: center;
+  }
+
+  .formulaire {
+    display: inline-block;
+    width: 700px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    background:#F0F8FF;
+    text-align: center;
+  }
+  
+  .formulaire > h1 {
+    font-weight: 500;
+  }
+  
+  .formulaire > p {
+    font-weight: 300;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+  }
+  
+  form div > p {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+  
+  form div > input, form div > select, form div > textarea {
+    background: #FF9966;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+  }
+  
+  form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+    padding: 15px 0px 0px 10px;
+  }
+  
+  form div > input::placeholder, form div > textarea::placeholder {
+    color: #303030;
+  }
+  
+  form div > select:invalid {
+    color: #303030;
+  }
+  
+  form div > select option {
+    color: #303030;
+  }
+  
+  form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+  }
+  
+  form button {
+    width: 450px;
+    max-width: 330px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 19px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+  }
+
+  .config {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*header section*/
+.sub_page .hero_area {
+  height: auto;
+}
+
+.hero_area.sub_pages {
+  height: auto;
+}
+
+.header_section {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 10px 30px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover::before {
+  display: block;
+}
+
+.custom_nav-container .navbar-nav .nav-item.active a::before {
+  display: block;
+}
+
+.navbar-brand img {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+
+/*end header section*/
+
+
+
+.PhotoLogo {
+  margin-top: 45px;
+  width: 200px;
+  height: auto;
+}
+
+.work_section .btn-box a {
+  color: #ffffff;
+}
+
+.work_section .btn-box hr {
+  background-color: #ffffff;
+}
+
+.contact_section input,
+.contact_section select {
+  width: 100%;
+  border: 0;
+  padding: 15px 12px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin: 10px 0;
+}
+
+.contact_section input::-webkit-input-placeholder,
+.contact_section select::-webkit-input-placeholder {
+  color: #3a3a3a;
+}
+
+.contact_section input:-ms-input-placeholder,
+.contact_section select:-ms-input-placeholder {
+  color: #3a3a3a;
+}
+
+.contact_section input::-ms-input-placeholder,
+.contact_section select::-ms-input-placeholder {
+  color: #3a3a3a;
+}
+
+.contact_section input::placeholder,
+.contact_section select::placeholder {
+  color: #3a3a3a;
+}
+
+.contact_section button {
+  background-color: #ff4f5a;
+  padding: 12px 55px;
+  outline: none;
+  border: none;
+  border: 1px solid #ff4f5a;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.contact_section button:hover {
+  color: #ff4f5a;
+  background-color: transparent;
+}
+
+.client_section .client_container .detail-box p {
+  text-align: center;
+}
+
+.client_section .client_container .client_id .img-box {
+  width: 75px;
+  margin-right: 10px;
+}
+
+.client_section .client_container .client_id .img-box img {
+  width: 100%;
+}
+
+.info_section {
+  background-color: #9a7070;
+  color: #ffffff;
+}
+
+.info_section a {
+  color: #ffffff;
+}
+
+.info_section h4 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* footer section*/
+
+.footer_section {
+  color: #171717;
+  margin: 0;
+  text-align: center;
+}
+
+/* end footer section*/
